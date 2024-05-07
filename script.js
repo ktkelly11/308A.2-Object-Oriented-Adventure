@@ -73,4 +73,27 @@ class Adventurer extends Character {
     console.log(`${this.name} is scouting ahead...`);
     super.roll();
   }
+  lead() {
+    console.log(`${this.name} is leading us...`);
+    super.roll;
+  }
+  fight() {
+    console.log(`${this.name} is fighting...`);
+    super.roll;
+  }
 }
+
+class companion extends Adventurer {
+  constructor(name, type) {
+    super(name);
+    this.type = type;
+    this.inventory.push("spyglass", "lamp");
+  }
+  lead() {
+    console.log(`${this.name} is leading us...`);
+    super.roll();
+  }
+}
+
+const robin = new Adventurer("Robin", "lead");
+robin.inventory.push("sword", "potion", "artifact", "bedroll", "50 gold coins");
