@@ -116,3 +116,6 @@ class Adventurer extends Character {
 // I know I have to " check to the constructor of the Adventurer class that ensures the given role matches one of these values," but I don't know how...
 
 // Part 5: Gather your Party
+// Is this even asking us to do anything?!
+
+// Part 6: Developing Skills
