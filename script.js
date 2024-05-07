@@ -106,3 +106,13 @@ const Frank = new companion("Frank", "Flea");
 Leo.companion = Frank;
 
 // Part 4: Class Uniforms
+class Character {
+  static MAX_HEALTH = 100;
+}
+
+class Adventurer extends Character {
+  static ROLES = ["Fighter", "Healer", "Wizard"];
+}
+// I know I have to " check to the constructor of the Adventurer class that ensures the given role matches one of these values," but I don't know how...
+
+// Part 5: Gather your Party
