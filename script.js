@@ -95,5 +95,14 @@ class companion extends Adventurer {
   }
 }
 
-const robin = new Adventurer("Robin", "lead");
+const Robin = new Adventurer("Robin", "lead");
 robin.inventory.push("sword", "potion", "artifact", "bedroll", "50 gold coins");
+
+const Leo = new companion("Leo", "Cat");
+Leo.inventory.push("spyglass", "lamp");
+Robin.companion = Leo;
+
+const Frank = new companion("Frank", "Flea");
+Leo.companion = Frank;
+
+// Part 4: Class Uniforms
